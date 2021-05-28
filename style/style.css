@@ -10,7 +10,7 @@ body {
   max-width: 600px;
   margin: auto;
 }
-.nav ul {
+.navi ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -21,11 +21,11 @@ body {
   top: 0;
 }
 
-.nav li {
+.navi li {
   float: left;
 }
 
-.nav li a {
+.navi li a {
   display: block;
   color: white;
   text-align: center;
@@ -34,10 +34,23 @@ body {
 }
 
 /* Change the link color to #111 (black) on hover */
-.nav li a:hover {
+.navi li a:hover {
   background-color: #111;
 }
 
-.nav .active {
+.navi .active {
   background-color: #04aa6d;
+}
+
+#contact h2{
+  display: block;
+  color: #04aa6d;
+  text-align: left;
+  padding: 14px 2px;
+  text-decoration: none;
+}
+
+#contact form button a{
+  text-decoration: none;
+  color: #ffffff;
 }
