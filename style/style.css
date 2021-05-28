@@ -8,12 +8,13 @@ body {
 }
 
 #navi {
-  max-width: 60em;
+  max-width: 75em;
   margin: auto;
 }
 
 .content {
   max-width: 600px;
+  padding-top: 5em;
   margin: auto;
 }
 
