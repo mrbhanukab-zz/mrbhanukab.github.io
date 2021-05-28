@@ -21,3 +21,6 @@ body {
 .content h1{
   padding: auto;
 }
+
+
+.content audio { display:none;}
