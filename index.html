@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <meta charset="UTF-8" />
     <meta
       name="description"
@@ -12,7 +18,7 @@
     />
     <meta name="author" content="Mr.Bhanuka" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#04aa6d" />
+    <meta name="theme-color" content="#101010" />
     <meta http-equiv="refresh" content="3600" />
     <title>Hi! I am Mr.Bhanuka. 😃</title>
     <link
@@ -21,23 +27,47 @@
       media="screen"
       href="./style/style.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
   </head>
   <body>
-    <div class="navi">
-      <ul>
-        <li class="active"><a href="./index.html">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
+    <nav id="navi" class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">Mr.Bhanuka</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="./index.html">Portfolio</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#"
+                ><span class="glyphicon glyphicon-user"></span> Sign Up</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span class="glyphicon glyphicon-log-in"></span> Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div class="content">
-      <h1>
-        Hi! I am Mr Bhanuka, a Front-End Developer 👨🏽‍💻, a beginner Back-End
+      <h1 align="center">
+        Hi! I am Mr Bhanuka, a Front-End Developer 👨🏽‍💻, A beginner Back-End
         Developer 👨🏽‍🎓, Graphics Designer 🎨 & also a beginner Ethical Hacker 👨🏽‍💻.
       </h1>
       <blockquote
@@ -322,59 +352,6 @@
         Quod, libero animi. Animi nihil distinctio fuga quisquam ipsam, laborum
         vel quo!
       </p>
-      <div id="contact">
-        <h2>Feel free to contact me anytime.</h2>
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail">Email address</label>
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              aria-describedby="emailHelp"
-              placeholder="Enter email"
-              required
-            />
-            <small id="emailHelp" class="form-text text-muted"
-              >We'll never share your email with anyone else.</small
-            >
-            <script>
-              var Email = document.querySelector("#email").value;
-            </script>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputText">Your Whatsapp Number</label>
-            <input
-              type="tel"
-              id="tel"
-              class="form-control"
-              name="phone"
-              placeholder="+94 *** *** ***"
-              required
-            />
-            <script>
-              var tel = document.querySelector("#tel").value;
-            </script>
-            <small id="emailHelp" class="form-text text-muted"
-              >We'll never share your Whatsapp Number with anyone else.</small
-            >
-          </div>
-          <div class="form-group">
-            <label for="exampleInputName">Full Name</label>
-            <input
-              type="txt"
-              class="form-control"
-              id="name"
-              placeholder="FirstName LastNmae"
-              required
-            />
-            <script>
-              var fname = document.querySelector("#name").value;
-            </script>
-          </div>
-          <button type="submit" class="btn btn-primary"><a href="https://api.whatsapp.com/send?phone=767733492" onclick="location.href=this.href+'&text=Email:'+Email">Submit</a></button>
-        </form>
-      </div>
     </div>
   </body>
 </html>
